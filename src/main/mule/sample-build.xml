@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="b3292720-13fe-4957-80fd-1e1034ad27a2" >
+		<http:listener-connection host="0.0.0.0" port="${http.port}" />
+	</http:listener-config>
+	<global-property doc:name="Global Property" doc:id="15aeb68b-ad9e-461c-8965-ab31954aeefe" name="mule.env" value="prod" />
+	<configuration-properties doc:name="Configuration properties" doc:id="fcde80ab-c265-4726-ae0e-6e8711a50c34" file="sample-${mule.env}.yaml" />
+	<flow name="sample-buildFlow" doc:id="14e8f3db-a602-4bf4-97b4-70aadd9f1eed" >
+		<http:listener doc:name="Listener" doc:id="47000ac8-4c02-4753-a7a5-9d7bc49181a1" config-ref="HTTP_Listener_config" path="/test"/>
+		<set-payload value='#["success..."]' doc:name="Set Payload" doc:id="b36a994f-df32-4e0c-be39-75736e179197" />
+	</flow>
+</mule>
