@@ -14,7 +14,7 @@
 		<groupId>com.hertz.mule4</groupId>
 		<artifactId>lib-parent-pom</artifactId>
 		<version>1.0.1</version>
-</parent>
+    </parent>
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,6 +50,11 @@
             <version>1.1.5</version>
             <classifier>mule-plugin</classifier>
         </dependency>
+		<dependency>
+			<groupId>com.hertz.mule4</groupId>
+			<artifactId>lib-common-error</artifactId>
+			<version>${hertz.common.error.version}</version>
+      </dependency>
 	</dependencies>
 
 	<!--<distributionManagement>
