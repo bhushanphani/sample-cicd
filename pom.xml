@@ -54,7 +54,7 @@
 
 	<distributionManagement>
 		<repository>
-			<id>central</id>
+			<id>hertzcentral</id>
 			<name>ip-10-218-57-102-releases</name>
 			<url>https://10.218.57.102/artifactory/libs-release-local</url>
 		</repository>
