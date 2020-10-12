@@ -55,13 +55,13 @@
 	<distributionManagement>
 		<repository>
 			<id>hertzcentral</id>
-			<name>ip-10-218-57-102-releases</name>
-			<url>https://10.218.57.102/artifactory/libs-release-local</url>
+			
+			<url>http://10.218.57.102/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<name>ip-10-218-57-102-snapshots</name>
-			<url>https://10.218.57.102/artifactory/libs-release-local</url>
+			
+			<url>http://10.218.57.102/artifactory/libs-release-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
