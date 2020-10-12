@@ -52,7 +52,7 @@
         </dependency>
 	</dependencies>
 
-	<distributionManagement>
+	<!--<distributionManagement>
 		<repository>
 			<id>hertzcentral</id>
 			
@@ -63,7 +63,7 @@
 			
 			<url>http://10.218.57.102/artifactory/libs-release-local</url>
 		</snapshotRepository>
-	</distributionManagement>
+	</distributionManagement>-->
 
 	<repositories>
           <repository>
