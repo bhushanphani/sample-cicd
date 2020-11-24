@@ -10,11 +10,11 @@
 
 	<name>sample-build</name>
 	
-	<parent>
+	<!--<parent>
 		<groupId>com.hertz.mule4</groupId>
 		<artifactId>lib-parent-pom</artifactId>
 		<version>1.0.1</version>
-</parent>
+</parent>-->
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,6 +32,23 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<deploymentType>${mule.deploymentType}</deploymentType>
+					<muleVersion>${mule.version}</muleVersion>
+					<username>${mule.username}</username>
+					<password>${mule.password}</password>
+					<uri>${mule.uri}</uri>
+					<application>${mule.application}</application>
+					<applicationName>${mule.applicationName}</applicationName>
+					<businessGroup>${mule.businessGroup}</businessGroup>
+					<target>${mule.target}</target>
+					<workerType>${mule.workerType}</workerType>
+					<workers>${mule.workers}</workers>
+					<redeploy>true</redeploy>
+					<environment>${mule.environment}</environment>
+					<properties>
+						<mule.env>${mule.env}</mule.env>
+						<property.key>${property.key}</property.key>
+					</properties>
 				</configuration>
 			</plugin>
 			<plugin>
