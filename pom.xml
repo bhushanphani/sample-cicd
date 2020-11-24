@@ -10,11 +10,11 @@
 
 	<name>sample-build</name>
 	
-	<!--<parent>
+	<parent>
 		<groupId>com.hertz.mule4</groupId>
 		<artifactId>lib-parent-pom</artifactId>
 		<version>1.0.1</version>
-</parent>-->
+</parent>
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,9 +24,7 @@
 		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
 	</properties>
 	
-	<profiles>
-	<profile>
-      <id>onPremise</id>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -69,9 +67,7 @@
           		</plugin>
 		</plugins>
 	</build>
-	</profile>
-	</profiles>
-
+	
 	<dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
